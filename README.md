@@ -54,6 +54,11 @@ Note: Will return all fields if no inclusions or exclusions are specified
 
 Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
+**How to find inclusions**
+To find inclusions for your RSS feed open your RSS feed in a new window in your browser
+Then you should see a bunch of entries with each one you want starting with '<title>' for example.
+  You can also leave out the inclusions part in your configuration.yaml, then if you head over to Home Assistant and under Dev Tools open the 'states' which has the <> logo and find your RSS sensor and all available inclusions will be there, just remove "".
+
 [commits-shield]: https://img.shields.io/github/commit-activity/y/custom-components/sensor.feedparser.svg?style=for-the-badge
 [commits]: https://github.com/custom-components/sensor.feedparser/commits/master
 [discord]: https://discord.gg/Qa5fW2R
